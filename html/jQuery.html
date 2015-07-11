@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>jQueryの練習</title>
+	<style>
+		.myStyle{
+			border: 5px solid green;
+			font-size: 48px;
+		}
+	</style>
+</head>
+<body>
+	<p>jQeuryの練習</p>
+	<ul id="main">
+		<li class="item">1</li>
+		<li class="item">2</li>
+		<li>3
+			<ul id="sub">
+				<li>3-0</li>
+				<li class="item">3-1</li>
+				<li class="item">3-2</li>
+				<li>3-3</li>
+			</ul>
+		</li>
+		<p><a href="http:// google.com" data-sitename="google">Google</a></p>
+		<p><a href="http:// yahoo.com">Yahoo</a></p>
+		<p><a href="http:// dotinstall.com">Dotinstall</a></p>
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script>
+			
+			$(function(){
+				$('p').css('color','red');
+			//console.log($('p').css('color'));
+			//$("#sub > li:eq(1)").siblings().css('color','red');
+			//$('a[href*="google"]').css('background','red');
+			$('p').addClass('myStyle');
+			console.log($('a').attr('href'));
+			//$('a').attr('href','kametyan.co.jp');
+			//console.log($('a').data('sitename'));
+			//$('p').text('ヘイヘイ');
+			//$('p').html('<a href="kame.co.jp">click</a>');
+			//$('p').empty();
+		});
+		</script>
+		<script>
+			var test="kame";
+		</script>
+	</body>
+	</html>
